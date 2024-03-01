@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead>
+    <eadheader>
+        <eadid>FRAD049_IR_0001</eadid>
+        <filedesc>
+            <titlestmt>
+                <titleproper>Archives de la direction des ressources humaines du Département de Maine-et-Loire (1885-2020)</titleproper>
+                <subtitle>État des versements</subtitle>
+                <author>Établi par Cyril Évène</author>
+            </titlestmt>            
+            <publicationstmt><address>
+                <addressline>Archives départementales de Maine-et-Loire</addressline>                
+            </address>
+                <date>Juin 2022</date>
+            </publicationstmt>
+        </filedesc>
+        <profiledesc>
+            <creation>Cet instrument de recherche a été rédigé à l'aide du logiciel &lt;oXygen&gt; XML Editor 23.1</creation>
+            <langusage>
+                <language langcode="fre">Français</language>
+            </langusage>
+            <descrules>Conforme à la norme ISAD(G) et aux règles d'application de la DTD EAD (version 2002).</descrules>
+        </profiledesc>
+    </eadheader>
+    <archdesc level="fonds">
+        <did>
+            <unitid> 140 alpha, 1788 W, 1956 W, 2096 W, 2097 W, 2225 W, 2334 W, 2426 W, 2452 W, 2550 W, 2589 W, 2702 W, 2708 W, 2709 W, 2774 W, 2837 W, 2978 W, 3028 W</unitid>
+            <unittitle>Ressources humaines</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1885-01-01 / 2020-12-31">1885-2020</unitdate>
+            <physdesc><extent>103,90 m.l.</extent></physdesc>
+            <origination>
+                <corpname authfilenumber="FRAD049_NP_0001">Maine-et-Loire (France). Conseil départemental. Direction des ressources humaines</corpname>
+            </origination>
+        </did>
+        <controlaccess>
+            <subject source="ThesaurusMatiereSIAF" authfilenumber="http://data.culture.fr/thesaurus/resource/ark:/67717/T1-805">personnel</subject>
+        </controlaccess>
+        <custodhist>
+            <p>Les archives ont été conservées dans les locaux de stockage de la direction des ressources humaines. Elles ont bénéficié de bonnes conditions de conservation.</p>
+        </custodhist>
+        <scopecontent>
+            <p>Les versements effectués par la DRH couvrent l’ensemble des activités (recrutement, formation, gestion de carrière, organismes paritaires, communication interne…) depuis la fin du XIXe siècle jusqu’aux années 2010.</p>
+        </scopecontent>
+        <bioghist>
+            <p>Les informations sur l'histoire du producteur sont consultables dans la notice d'autorité <extref linktype="simple" id="FRAD049_NP_0001">Maine-et-Loire (France). Conseil départemental. Direction des ressources humaines</extref>
+            </p>
+        </bioghist><!-- Maintien de l'élément <BIOGHIST> avec renvoi vers la notice d'autorité correspondante -->
+        <appraisal>
+            <p>Le traitement des archives des ressources humaines a été encadré par plusieurs instructions successives au niveau national :
+                <list>
+                    <item>- circulaire FP/3 n° 1821 du 20 octobre 1993</item>
+                    <item>- circulaire AD 95-1 du 27 janvier 1995</item>
+                    <item>- instruction DAF/DPACI/RES/2009/018 du 28 août 2009</item>
+                    <item>- note DGP/SIAF/2014/001 du 10 janvier 2014</item>
+                </list>
+            </p>
+            <p>Elles définissent les règles d’élimination, d’échantillonnage et de conservation des divers documents.</p>
+        </appraisal>
+        <accruals>
+            <p>La DRH du Département de Maine-et-Loire effectuant des versements réguliers aux Archives départementales, les fonds décrits dans le présent instrument de recherche sont encore amenés à s’enrichir.</p>
+        </accruals>
+        <arrangement>
+            <p>La répartition des différents types de documents s’appuie sur les principales catégories définies dans l’instruction de 2009. Sont indiqués dans le corps de l’instrument de recherche les thématiques ou typologies documentaires, ainsi que les groupes de cotes et tranches chronologiques correspondants.</p>
+        </arrangement>
+        <accessrestrict>
+            <p>En application de la loi du 15 juillet 2008, les dossiers de personnel ne sont communicables qu’après un délai de 50 ans (respect de la vie privée) à l’exception des personnes concernées pour lesquelles une communication immédiate s’applique. Si le dossier comprend des pièces médicales, un délai supplémentaire est susceptible de s’appliquer (25 ans après la date du décès de l’agent ou, si la date de décès n’est pas connue, 120 ans à compter de la date de sa naissance).</p>
+            <p>Les documents non librement communicables peuvent faire l’objet d’une demande d’accès par dérogation.</p>
+        </accessrestrict>
+        <otherfindaid><p>L’état des versements est un instrument de première orientation. Pour plus de détails sur le contenu des articles, il convient de se reporter aux bordereaux de versements correspondants.</p>
+        </otherfindaid>        
+        <relatedmaterial>
+            <p>Sous-série 2 M : personnel administratif.</p>
+        </relatedmaterial>
+        <bibliography>            
+            <list>
+                <item>FOMBONNE Jean, <emph render="italic">Personnel et DRH</emph>, Vuibert, 2001, 777 p.</item>
+                <item>PINAUD Henri, <emph render="italic">La gestion des ressources humaines en France</emph>, L’Harmattan, 2008, 217 p.</item>
+            </list>
+        </bibliography>
+        <dsc>
+            <c level="subfonds">
+                <did>
+                    <unittitle><emph render="bold">Direction</emph></unittitle><!-- À noter qu'ici, s'agissant d'un titre plutôt que d'une description à proprement parler, l'élément <HEAD> pourrait aussi être utilisé à la place de <UNITTITLE> -->
+                </did>
+                <c level="recordgrp">
+                    <did>
+                        <unitid>2709 W 1-6</unitid>
+                        <unittitle>Rapports et délibérations.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1949-01-01 / 1999-12-31">1949-1999</unitdate>
+                    </did>
+                </c>
+                <c level="file">
+                    <did>
+                        <unitid>2837 W 1</unitid>
+                        <unittitle>Statut du personnel départemental avant la décentralisation.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1942-01-01 / 1986-12-31">1942-1986</unitdate>
+                    </did>
+                </c>
+            </c>
+            <c level="subfonds">
+                <did>
+                    <unitid>2096 W 1-14</unitid>
+                    <unittitle>Recrutement. - Organisation de concours.</unittitle><!-- Ici, choix de concaténer le titre "Recrutement" et l'analyse proprement dite séparés par un point espace tiret (. -) -->
+                    <unitdate calendar="gregorian" era="ce" normal="1966-01-01 / 1995-12-31">1966-1995</unitdate>
+                </did>        
+            </c>
+            <c level="subfonds">
+                <did><unittitle><emph render="bold">Formation</emph></unittitle></did><!-- À noter qu'ici, s'agissant d'un titre plutôt que d'une description à proprement parler, l'élément <HEAD> pourrait aussi être utilisé à la place de <UNITTITLE> -->
+                <controlaccess>
+                    <subject source="ThesaurusMatiereSIAF" authfilenumber="http://data.culture.fr/thesaurus/resource/ark:/67717/T1-1196">formation professionnelle</subject>
+                </controlaccess>
+                <c level="recordgrp">
+                    <did>
+                        <unitid>2709 W 8-22</unitid>
+                        <unittitle>Plan de formation.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="2003-01-01 / 2009-12-31">2003-2009</unitdate>
+                    </did>
+                </c>
+                <c level="file">
+                    <did>
+                        <unitid>2709 W 7</unitid>
+                        <unittitle>Préparation aux concours et examens professionnels.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="2005-01-01 / 2012-12-31">2005-2012</unitdate>
+                    </did>
+                </c>
+            </c>
+            <c level="subfonds">
+                <did>
+                    <unitid>2225 W 1-11</unitid>
+                    <unittitle>Établissement de la paie. - Vacataires de la direction des interventions sanitaires et sociales (DISS).</unittitle><!-- Ici, choix de concaténer le titre "Recrutement" et l'analyse proprement dite séparés par un point espace tiret (. -) -->
+                    <unitdate calendar="gregorian" era="ce" normal="1987-01-01 / 1994-12-31">1987-1994</unitdate>
+                </did>
+                <controlaccess>
+                    <subject source="ThesaurusMatiereSIAF" authfilenumber="http://data.culture.fr/thesaurus/resource/ark:/67717/T1-374">rémunération</subject>
+                </controlaccess>
+            </c>
+            <c level="subfonds">
+                <did><unittitle><emph render="bold">Gestion de la carrière</emph></unittitle></did>
+                <controlaccess>
+                    <subject source="ThesaurusMatiereSIAF" authfilenumber="http://data.culture.fr/thesaurus/resource/ark:/67717/T1-1196">carrière professionnelle</subject>
+                </controlaccess>
+                <c level="recordgrp">
+                    <did>
+                        <unitid>2225 W 12-15</unitid>
+                        <unittitle>Fiches nominatives.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1965-01-01 / 2000-12-31">1965-2000</unitdate>
+                    </did>
+                </c>
+                <c level="recordgrp">
+                    <did>
+                        <unitid>1788 W 1-99, 140 alpha 1-21, 2708 W 1-59, 2452 W 1-50, 2225 W 30-44, 2097 W 1-18, 2334 W 1-26, 2589 W 1-31, 2550 W 1-56, 2426 W 1-26, 1956 W 1-12, 2774 W 1-89, 2837 W 19-60, 2978 W 1-81, 3028 W 1-56</unitid>
+                        <unittitle>Dossiers individuels.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1885-01-01 / 2018-12-31">1885-2018</unitdate>
+                    </did>
+                    <note><p>Pour les dossiers individuels du personnel titulaire ou non titulaire rémunéré ainsi que pour les agents transférés de la DDASS, les dates extrêmes correspondent à l’année de naissance des agents (140 ALPHA, 1788 W, 1956 W, 2097 W, 2225 W, 2334 W) ou à l’année de naissance et l’année de départ de la collectivité (retraite, mutation, démission, fin de contrat, décès ; 2426 W, 2452 W, 2550 W, 2589 W, 2708 W, 2774 W, 2837 W, 2978 W, 3028 W). Pour les stagiaires écoles, il s’agit de l’année de début de stage.</p></note>
+                    <c level="recordgrp">
+                        <did><unittitle>Personnel titutaire ou non titulaire rémunéré</unittitle></did>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>1788 W 1-99</unitid>
+                                <unitdate calendar="gregorian" normal="1885-01-01 / 1970-12-31">1885-1970</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>140 alpha 1-21</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1890-01-01 / 1940-12-31">1890-1940</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2708 W 1-59</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1922-01-01 / 2016-12-31">1922-2016</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2452 W 1-50</unitid>
+                                <unitdate era="ce" normal="1928-01-01 / 2011-12-31">1928-2011</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2225 W 30-44</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1931-01-01 / 1964-12-31">1931-1964</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2097 W 1-18</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1934-01-01 / 1962-12-31">1934-1962</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2334 W 1-26</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1937-01-01 / 1970-12-31">1937-1970</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2589 W 1-31</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1937-01-01 / 2013-12-31">1937-2013</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2550 W 1-56</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1938-01-01 / 2014-12-31">1938-2014</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2426 W 1-26</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1939-01-01 / 2007-12-31">1939-2007</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>1956 W 1-12</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1941-01-01 / 1963-12-31">1941-1963</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2774 W 1-89</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1946-01-01 / 2015-12-31">1946-2015</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2837 W 19-60</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1947-01-01 / 2016-12-31">1947-2016</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2978 W 1-81</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1951-01-01 / 2018-12-31">1951-2018</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>3028 W 1-56</unitid>
+                                <unitdate calendar="gregorian" normal="1956-01-01 / 2020-12-31">1956-2020</unitdate>
+                            </did>
+                        </c>
+                    </c>
+                    <c level="recordgrp">
+                        <did>
+                            <unitid>2837 W 13-18</unitid>
+                            <unittitle>Agents transférés de la direction départementale des affaires sanitaires et sociales (DDASS).</unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1921-01-01 / 2004-12-31">1921-2004</unitdate>
+                        </did>
+                    </c>
+                    <c level="recordgrp">
+                        <did>
+                            <unitid>2837 W 2-12, 2978 W 82-83</unitid>                            
+                            <unittitle>Stagiaires écoles.</unittitle>                            
+                            <unitdate normal="2008-01-01 / 2017-12-31">2008-2015, 2017</unitdate><!-- Ici, les attributs disponibles ne permettent pas de préciser la césure entre 2015 et 2017 -->
+                        </did>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2837 W 2-12</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="2008-01-01 / 2015-12-31">2008-2015</unitdate>
+                            </did>
+                        </c>
+                        <c level="recordgrp">
+                            <did>
+                                <unitid>2978 W 82-83</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="2017-01-01 / 2017-12-31">2017</unitdate>
+                            </did>
+                        </c>
+                    </c>
+                </c>
+            </c>       
+            <c level="subfonds">
+                <did>
+                    <unitid>2225 W 16-29</unitid>
+                    <unittitle>Organismes paritaires. - Comité technique paritaire (CTP).</unittitle>
+                    <unitdate calendar="gregorian" era="ce" normal="1986-01-01 / 2000-12-31">1986-2000</unitdate>
+                </did>
+            </c>
+            <c level="subfonds">
+                <did><unittitle><emph render="bold">Communication interne</emph></unittitle></did>
+                <c level="recordgrp">
+                    <did>
+                        <unitid>2702 W 1-2</unitid>
+                        <unittitle>Manifestations et cérémonies.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1997-01-01 / 2008-12-31">1997-2008</unitdate>
+                        
+                    </did>
+                </c>
+                <c level="recordgrp">
+                    <did>
+                        <unitid>2702 W 3-5</unitid>
+                        <unittitle>Publications.</unittitle>
+                        <unitdate calendar="gregorian" normal="1997-01-01 / 2014-12-31">1997-2014</unitdate>
+                    </did>
+                </c>
+            </c>
+        </dsc>
+    </archdesc>
+</ead>

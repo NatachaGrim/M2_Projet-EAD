@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead>
+    <eadheader>
+        <eadid>FRAD069_IR_1F_Fesch</eadid>
+        <filedesc>
+            <titlestmt>
+                <titleproper>Cardinal Joseph Fesch, archevêque de Lyon 1691-1814</titleproper>
+                <subtitle>Répertoire numérique détaillé</subtitle>
+                <author>Répertoire établi par Claude Faure, archiviste en chef du département du Rhône, revu par Nathalie Favre-Bonvin, attachée de conservation, et Marion Duvigneau, conservateur du patrimoine.</author>
+            </titlestmt>            
+            <publicationstmt>
+                <address>
+                    <addressline>Lyon</addressline>
+                    <addressline>Archives départementales du Rhône</addressline>
+                </address>
+                <publisher>Département du Rhône</publisher>
+                <date>1936-2010</date>
+            </publicationstmt>
+        </filedesc>
+        <profiledesc>
+            <creation>Cet instrument de recherche a été encodé à l'aide du logiciel oXygen.</creation>
+            <langusage>Français</langusage>
+            <descrules>Conforme à la norme ISAD(G) et aux règles d'application de la DTD EAD (version 2002).</descrules>
+        </profiledesc>
+        
+    </eadheader>
+    <archdesc level="fonds">
+        <did>
+            <unitid>1 F 1-150</unitid>
+            <unittitle>Fonds des papiers du cardinal Fesch.</unittitle>
+            <unitdate calendar="gregorian" era="ce" normal="1691-01-01/1814-12-31">1691-1814</unitdate>
+            <origination>
+                <persname authfilenumber="FRAD069_NP_Fesch">Fesch, Joseph (1763-1839)</persname>
+            </origination>
+            <physdesc>
+                <extent>3,6 mètres linéaires</extent>
+            </physdesc>           
+        </did>
+        <custodhist>
+            <p>Le cardinal Fesch (1763-1839), archevêque de Lyon et oncle de Napoléon, exilé après 1815, a classé sa correspondance, relative essentiellement à son ambassade à Rome entre 1803 et 1806, et ses notes relatives à la Corse, dont il est originaire.</p>
+            <p>La provenance de ce fonds n’a pu être déterminée avec exactitude : sans doute initialement conservé à l’archevêché de Lyon, il est vraisemblablement entré aux Archives du Rhône en 1907-1908, suite à la séparation de l’Église et de l’État.</p>
+            <p>Il aurait dû, normalement, être re-coté en série J mais a été maintenu en série F en raison de sa notoriété, puisqu’il avait fait l’objet d’un inventaire présenté au congrès des sociétés savantes en 1935 (l’archiviste avait peut-être entrepris le classement des papiers Fesch sous la pression de l’universitaire André Latreille, qui intervenait au même congrès, à moins, qu’au contraire, il ne lui eût signalé cette source) et édité par le comité des travaux historiques et scientifiques (CTHS) en 1936.</p>     
+        </custodhist>
+        <arrangement>
+            <p>Les articles du fonds du cardinal Fesch ont été cotés 1 F 1-150, et le répertoire a été publié en 1936 par Claude Faure, archiviste départemental.</p>        
+            <p>Cet instrument de recherche, dactylographié en mars 2007 par M. Milleret sous la direction d’Agnès Goudail, conservateur, a été revu et complété par une introduction normalisée en août 2007 par Nathalie Favre Bonvin, attachée de conservation. La bibliographie, les sources complémentaires et certaines analyses ont été révisées et remises à jour par Marion Duvigneau, conservateur, en 2010.</p>
+        </arrangement>
+        <scopecontent>
+            <p>Le fonds des papiers du cardinal Fesch se compose :
+                <list>
+                <item>des papiers du cardinal Le Camus, évêque de Grenoble à la fin du XVIIe siècle ;</item>
+                <item>des papiers de son prédécesseur à Rome, François Cacault ;</item>
+                <item>la correspondance diplomatique relative à son ambassade à Rome ;</item>
+                <item>des notes et mémoires relatifs à la Corse.</item>
+                </list>
+            </p>            
+            <p>Ce fonds est d’une grande richesse, comme en témoignent les nombreux travaux d’André Latreille et du chanoine Jomand. On trouve notamment des renseignements sur les relations diplomatiques de Napoléon avec le Saint-Siège. On note également la présence de plusieurs lettres autographes de Talleyrand et une lettre autographe du pape Pie VII. Mais c’est peut-être comme source de l’histoire de la Corse que ce fonds mérite d'être particulièrement signalé.</p>
+            <p>L'avant-propos au répertoire établi par Claude Faure publié dans <emph render="italic">Notices, inventaires et documents publiés par le CTHS</emph>, (t. XXII, Paris : Paul Hartmann, 1936, p. 113-149) consultable sous format PDF, apporte de nombreuses informations sur l'historique et le contenu des documents du fonds Fesch.</p>
+            <dao linktype="simple" href="FRAD069_AvantPropos_1_F.jpg" title="Avant-propos de 1936">
+                <daodesc>
+                    <p>Reproduction PDF de l'avant-propos rédigé par Claude Faure en 1936</p>
+                </daodesc>
+            </dao>
+        </scopecontent>
+<!-- Regroupement dans le scopecontent des informations de description et d'intérêt du fonds. C'est aussi l'objet du scopecontent d'aider le lecteur à évaluer les documents et leur intérêt par rapport à ses recherches. Pour éviter de surcharger cette partie, le long avant-propos rédigé par l'archiviste en 1936 est annexé au fichier à l'aide d'un <DAO> -->
+        <controlaccess>
+            <persname source="BnF" authfilenumber="FRBNF12008789">Fesch, Joseph (1763-1839)
+                <extptr linktype="simple" href="http://ark.bnf.fr/ark:/12148/cb12008789w"/>
+            </persname>
+            <geogname source="GeoNames" authfilenumber="2996944">Lyon (Rhône, France)
+                <extptr linktype="simple" href="https://www.geonames.org/2996944"/>
+            </geogname>
+            <geogname source="GeoNames" authfilenumber="3169070">Rome (Italie)
+                <extptr href="https://www.geonames.org/3169070"/>
+            </geogname>
+            <geogname source="GeoNames" authfilenumber="3023517">Corse (France ; région administrative)
+                <extptr href="https://www.geonames.org/3023517"/>
+            </geogname>
+        </controlaccess>
+<!-- La rétroconversion d'un IR est l'occasion d'ajouter des index au niveau pertinent. Il s'agit ici d'indexer la totalité du fonds. Par héritage, tous les niveaux inférieurs sont requêtables avec les index "Fesch, Joseph (1763-1839)", "Lyon (Rhône, France)", Rome (Italie) et "Corse (France ; région administrative)
+On a tout intérêt à documenter et sourcer les index lorsqu'ils sont présents dans des référentiels ouverts et partagés comme pour les exemples ci-dessus avec la BnF et GeoNames -->
+        <relatedmaterial>
+            <p><emph render="italic">Archives nationales</emph>
+                <list>
+                    <item>F19 : Administration des cultes, notamment Papiers du cardinal Fesch et de la Propagande (F19 1902, F19 6238-6242, F19- 270*)</item>
+                    <item>400 AP/9 : Fonds Napoléon, archives de Madame Mère (1760-1836), du cardinal Fesch (1763-1839) et du prince Eugène de Beauharnais (1781-1824)</item>
+                    <item>Musée de l'histoire de France, AE/I/13/25 : Lettre manuscrite signée du cardinal Fesch au comte de Montalivet, ministre de l'Intérieur, au sujet d'un règlement sur l'administration des séminaires diocésains proposé au Conseil d'État, écrite à Lyon, le 10 novembre 1813</item>
+                </list>
+            </p>
+            <p><emph render="italic">Archives départementales du Rhône</emph>
+                <list>
+                    <item>3 J : fonds Galle. Portraits du cardinal Fesch</item>
+                    <item>6 J 9 : fonds Joseph Camelin. Notes sur le clergé concordataire du Rhône et notamment sur le cardinal Fesch, archevêque de Lyon</item>
+                    <item>Série V : Administration des cultes dans le Rhône (1800-1940)</item>
+                </list>
+            </p>
+            <p><emph render="italic">Archives municipales de Lyon</emph>
+                <list><item>154 II : fonds André Latreille</item></list></p>
+            <p><emph render="italic">Archives secrètes du Vatican</emph>
+                <list><item>II Congrégation spéciale chargée des affaires de France (1792-1815). Epoca napoleonica : Francia</item></list>
+            </p>            
+            <p><emph render="italic">Bibliothèque nationale de France</emph>
+                <list>
+                    <item>Ms français NAF 14067 : lettre du cardinal Fesch à Mme Récamier</item>
+                    <item>Ms français NAF 22816-22819 : collection de lettres autographes de personnages célèbres, formée par M. Prosper Valton</item>
+                    <item>Ms français NAF 24718 : journal de l’abbé Lucotte, économe du cardinal Fesch (1803-1810)</item>
+                </list>
+            </p>
+            <p><emph render="italic">Bibliothèque interuniversitaire de la Sorbonne</emph>
+                <list><item>Ms 1602 : Lettres diverses adressées à Fontanes, grand maître de l'Université</item></list>
+            </p>
+            <p><emph render="italic">Bibliothèque Fesch, Ajaccio</emph>
+                <list>
+                    <item>Mss. modernes des XVIIe et XVIIIe siècles, légués par le cardinal Fesch en 1837</item>
+                    <item>Bibliothèque de 8 130 volumes léguée par le cardinal Fesch en 1837</item>
+                </list>
+            </p>
+            <p><emph render="italic">Bibliothèque municipale de Clermont-Ferrand</emph>
+                <list><item>Ms 337 : Autographes dont Fol. 287 Fesch (cardinal), t. II</item></list>
+            </p>
+            <p><emph render="italic">Bibliothèque Thiers</emph>
+                <list>
+                    <item>Ms Masson 73 : Madame-mère et cardinal Fesch. Autographes. Catalogues de la galerie du cardinal Fesch</item>
+                </list>
+            </p>       
+            <p><emph render="italic">Bibliothèque vaticane</emph>
+                <list><item>Rossi 1172 à 1178</item></list>
+            </p>            
+        </relatedmaterial>
+        <separatedmaterial>            
+            <p><emph render="italic">Archives municipales de Lyon</emph>            
+                <list><item>1 II 0383 1 : Fonds Joseph Fesch</item></list>
+            </p>            
+        </separatedmaterial>
+<!-- À savoir : il existe 2 éléments EAD pour encoder les sources complémentaires :
+       - <RELATEDMATERIAL> énumère les documents d'archives apportant des informations complémentaires au fonds décrit dans l'IR mais qui ne lui sont pas liés par la provenance
+       - <SEPARATEDMATERIAL> énumère les documents d'archives ayant un lien de provenance avec le fonds décrit. Dans le cas présent, les archives conservées aux AM de Lyon ont également été produites par le cardinal Joseph Fesch -->
+        <bibliography>
+            <p><emph render="italic">Ouvrages contemporains</emph>
+                <list>
+                    <item>
+                        <title linktype="simple"><emph render="italic">Défense de la vérité sur le cardinal Fesch et sur l’administration apostolique de Lyon, par un ancien vicaire général de Mgr d’Amasis</emph></title>, Lyon, éd. Dumoulin, Ronet et Sibuet, 1842
+                    </item>
+                    <item>
+                        <name>DUFOUR-PRADT (Dominique) éd.</name>, <title><emph render="italic">Les confessions du cardinal Fesch, traduites de l'italien, suivies du portrait de l'abbé Maury</emph></title>, Paris : Audin, 1816
+                    </item>
+                    <item>
+                        <persname>LYONNET (abbé)</persname>, <title><emph render="italic">Le cardinal Fesch, archevêque de Lyon. Fragments biographiques, politiques ou religieux pour servir l’histoire contemporaine</emph></title>, Lyon-Paris : Périsse, 1841</item>
+                    <item>
+                        <title><emph render="italic">La Vérité sur le cardinal Fesch ou réflexions d’un ancien vicaire général de Lyon sur l’histoire de S. E. par M. l’abbé Lyonnet</emph></title>, Lyon, éd. Louis Lesne, 1842
+                    </item>
+                </list>
+            </p>
+            <p><emph render="italic">Éditions de textes</emph>
+                <list>
+                    <item>                        
+                        <name>BERETTI (Francis) éd.</name>, <title><emph render="italic">Pascal Paoli à Maria Cosway, Lettres et documents, 1782-1803</emph></title>, Oxford : Voltaire Foundation, 2003
+                    </item>
+                    <item>
+                        <persname>DU CASSE (A.)</persname>, <title><emph render="italic">Histoire des négociations diplomatiques relatives aux traités de Morfontaine, de Lunéville et d'Amiens, pour faire suite aux « Mémoires du roi Joseph » ; précédée de la correspondance inédite de l'empereur Napoléon Ier avec le cardinal Fesch</emph></title>, Paris : E. Dentu, 1855
+                    </item>
+                    <item>
+                        <persname>FAURE (Claude)</persname>, <title><emph render="italic">Lettres inédites du cardinal Le Camus, évêque et prince de Grenoble (1632-1707)</emph></title>, Grenoble : impr. Allier père et fils – Paris : Auguste Picard, 1933 (Académie delphinale. Documents inédits relatifs au Dauphiné. 2e série. T. 2)
+                    </item>
+                    <item>
+                        <name>JOMAND (chanoine Joseph) éd.</name>, <title><emph render="italic">Le cardinal Fesch par lui-même [Choix de lettres]</emph></title>, Lyon, E. Vitte, 1970
+                    </item>
+                    <item>
+                        <name>NASALLI ROCCA DI CORNELIANO (Mgr Mario) éd.</name>, <title><emph render="italic">Memorie del cardinale Ercole Consalvi</emph></title>, Roma : Angelo Signorelli, 1950
+                    </item>
+                </list>
+            </p>
+        </bibliography>
+<!-- L'encodage des bibliographies est fastidieux en raison des nombreuses règles typographiques à respecter. -->
+        <dsc>
+            <c level="recordgrp">
+                <did>
+                    <unitid>1 F 1-2</unitid>
+                    <unittitle>Papiers antérieurs.</unittitle>
+                    <unitdate calendar="gregorian" era="ce" normal="1691-01-01 / 1780-12-31">1691-1780</unitdate>
+                    <origination><persname authfilenumber="FRAD069_NP_Fesch" source="AD069">Fesch, Joseph (1763-1839)</persname></origination>
+                </did>
+                <c level="item">
+                    <did>
+                        <unitid>1 F 1</unitid>
+                        <unittitle>Caractère des cardinaux ou état du Sacré Collège au conclave de 1691.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1691-01-01 / 1691-12-31">1691</unitdate>
+                    </did>
+                    <scopecontent>
+                        <p>Journal du Conclave ou mémoires de ce qui s’est passé dans le caractère de 1691 [de la main du cardinal Étienne Le Camus, évêque de Grenoble].</p>
+                    </scopecontent>
+                    <controlaccess>
+                        <persname source="BnF" authfilenumber="FRBNF12157269">Le Camus, Étienne (1632-1707)
+                            <extptr linktype="simple" href="http://ark.bnf.fr/ark:/12148/cb12157269v"/>
+                        </persname>
+                    </controlaccess>
+                </c>
+                <c level="item">
+                    <did>
+                        <unitid>1 F 2</unitid>
+                        <unittitle>Diplôme de l’Académie des sciences et beaux-arts de Bologne délivré à Cyr Sauti, artiste graveur.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1780-01-01 / 1780-12-31">1780</unitdate>
+                    </did>
+                </c>
+            </c>
+            <c level="recordgrp">
+                <did>
+                    <unitid>1 F 3-15</unitid>
+                    <unittitle>Papiers de François Cacault, prédécesseur de Fesch à Rome.</unittitle>
+                    <unitdate calendar="gregorian" era="ce" normal="1797-09-22 / 1803-12-31">an VI-1803</unitdate>
+<!-- Les dates révolutionnaires, nombreuses dans cet IR, obligent à les convertir au format grégorien afin de renseigner le plus exactement possible les dates normalisées indiquées en attribut -->
+                </did>
+                <controlaccess>
+                    <persname source="Wikidata" authfilenumber="Q665350">François Cacault
+                        <extptr linktype="simple" href="https://www.wikidata.org/wiki/Q665350"/>
+                    </persname>
+                </controlaccess>
+<!-- L'index "François Cacault" est posé au niveau pertinent. La source Wikidata retenue ici sert à démontrer qu'il existe pléthore de bases partagées auxquelles se référer. Pour plus de cohérence cependant, mieux vaut opter pour un seul référentiel sur l'ensemble des IR que l'on traite -->
+                <c level="file">
+                    <did>
+                        <unitid>1 F 3</unitid>
+                        <unittitle>Établissements belges à Rome.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1798-05-08 / 1798-06-29">19 floréal-11 messidor an VI</unitdate>
+                    </did>
+                    <scopecontent><p>Arrêtés des commissaires du Directoire exécutif envoyés à Rome.</p></scopecontent>
+                </c>
+                <c level="file">
+                    <did>
+                        <unitid>1 F 4-5</unitid>
+                        <unittitle>Minutes de lettres de Cacault.</unittitle>
+                        <unitdate calendar="gregorian" era="ce" normal="1800-09-23 / 1803-09-23">an IX-an XI</unitdate>
+                    </did>
+                    <c level="file">
+                        <did><unitid>1 F 4</unitid>
+                            <unittitle>Au cardinal Secrétaire d’État.</unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1801-05-28 / 1803-07-06">8 prairial an IX-17 messidor an XI</unitdate>
+                        </did>
+                    </c>
+                    <c level="file">
+                        <did>
+                            <unitid>1 F 5</unitid>
+                            <unittitle>Au ministre des Relations extérieures (11 nivôse an IX-12 messidor an XI) avec une lettre au citoyen Alquier ambassadeur de la République française près Sa Majesté silicienne (14 prairial an XI).</unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1800-09-23 / 1803-09-23">an IX-an XI</unitdate>
+                        </did>
+                        <controlaccess>                            
+                            <persname source="BnF" authfilenumber="FRBNF12568041">Alquier, Charles-Jean-Marie (1752-1826)
+                                <extptr linktype="simple" href="http://ark.bnf.fr/ark:/12148/cb125680412"/>
+                            </persname>
+                        </controlaccess>
+                    </c>
+                </c>
+                <c level="file">
+                        <did>
+                            <unitid>1 F 6-15</unitid>
+                            <unittitle>Correspondance passive.</unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1800-09-23 / 1803-12-31">an IX-1803</unitdate>
+                        </did>
+                    <c level="file">
+                        <did>
+                            <unitid>1 F 6</unitid>
+                            <unittitle>Lettres reçues du cardinal Consalvi.</unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1801-08-06 / 1803-07-08">6 août 1801-8 juillet 1803</unitdate>
+                        </did>
+                        <controlaccess>
+                            <persname source="BnF" authfilenumber="FRBNF12080035">Consalvi, Ercole (1757-1824)
+                                <extptr linktype="simple" href="http://ark.bnf.fr/ark:/12148/cb12080035r"/>
+                            </persname>
+                        </controlaccess>
+                    </c>
+                    <c level="file">
+                        <did>
+                            <unitid>1 F 7-8</unitid>
+                            <unittitle>Lettres reçues de Talleyrand.</unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1800-09-23 / 1803-09-23">an IX-an XI</unitdate>
+                        </did>
+                        <controlaccess>
+                            <persname source="BnF" authfilenumber="FRBNF11925965">Talleyrand-Périgord, Charles-Maurice de (1754-1838)
+                                <extptr href="http://ark.bnf.fr/ark:/12148/cb11925965j"/>
+                            </persname>
+                        </controlaccess>
+                        <c level="file">
+                            <did>
+                                <unitid>1 F 7</unitid>                                
+                                <unitdate calendar="gregorian" era="ce" normal="1803-06-18 / 1803-07-19">30 prairial an XI-30 messidor an XI</unitdate>
+                            </did>
+                        </c>
+                        <c level="file">
+                            <did>
+                                <unitid>1 F 8</unitid>                                
+                                <unitdate calendar="gregorian" era="ce" normal="1802-06-26 / 1803-07-19">7 messidor an X-30 messidor an XI</unitdate>
+                            </did>
+                        </c>
+<!-- Pour les cotes 1 F 7-8, l'élément <UNITTITLE> n'est pas à indiquer en vertu du principe de non-répétition de l'information. Ici, l'élément discriminant est <UNITDATE>. Le même cas se représente plus bas pour les cotes 1 F 12-14 -->
+                    </c>
+                    <c level="file">
+                        <did>
+                            <unitid>1 F 9</unitid>
+                            <unittitle>Lettres reçues des ministres de la Guerre, de la Marine et des Colonies, de l’Intérieur.</unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1800-09-23 / 1803-09-23">an IX-an XI</unitdate>
+                        </did>
+                        <scopecontent><p>Par Alquier, ambassadeur à Naples ; Petiet, conseiller d’État, ministre extraordinaire du gouvernement français dans la Cisalpine ; Devoize, commissaire général chargé des affaires de la République française près de bey de Tunis ; les préfets du Golo et de Vaucluse ; les généraux Charpentier, Gouvion Saint-Cyr, Marchand, Vial ; Joubert, commissaire ordonnateur en chef</p></scopecontent>
+                        <controlaccess>                            
+                            <persname source="BnF" authfilenumber="FRBNF12568041">Alquier, Charles-Jean-Marie (1752-1826)
+                                <extptr linktype="simple" href="http://ark.bnf.fr/ark:/12148/cb125680412"/>
+                            </persname>
+                            <persname source="BnF" authfilenumber="FRBNF12510885">Pétiet, Claude (1749-1806)
+                                <extptr linktype="simple" href="http://ark.bnf.fr/ark:/12148/cb12510885x"/>
+                            </persname>
+                            <persname source="BnF" authfilenumber="FRBNF16532650">Charpentier, Henri François Marie (1769-1831)
+                                <extptr href="http://ark.bnf.fr/ark:/12148/cb165326505"/>
+                            </persname>
+                            <persname source="BnF" authfilenumber="FRBNF11905597">Gouvion-Saint-Cyr, Laurent de (1764-1830)
+                                <extptr href="http://ark.bnf.fr/ark:/12148/cb11905597n"/>
+                            </persname>
+                            <persname source="BnF" authfilenumber="FRBNF17036085">Marchand, Jean-Gabriel (1765-1851)
+                                <extptr href="http://ark.bnf.fr/ark:/12148/cb17036085d"/>
+                            </persname>
+                            <persname source="BnF" authfilenumber="FRBNF10596397">Vial, Honoré (1766-1813)
+                                <extptr href="http://ark.bnf.fr/ark:/12148/cb10596397c"/>
+                            </persname>
+                            <persname source="BnF" authfilenumber="FRBNF12539279">Joubert, Louis (1762-1812)
+                                <extptr href="http://ark.bnf.fr/ark:/12148/cb12539279x"/>
+                            </persname>
+                        </controlaccess>
+                    </c>
+                    <c level="file">
+                        <did>
+                            <unitid>1 F 10-11</unitid>
+                            <unittitle>Lettres reçues du commissaire des Relations commerciales de la République française.</unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1800-09-23 / 1803-09-23">an IX-an XI></unitdate>
+                        </did>
+                        <c level="file">
+                            <did><unitid>1 F 10</unitid>
+                                <unittitle>Cività Vecchia</unittitle>
+                                <unitdate calendar="gregorian" era="ce" normal="1801-08-19 / 1803-07-02">1er fructidor an IX-13 messidor an XI</unitdate>
+                            </did>
+                        </c>
+                        <c level="file">
+                            <did>
+                                <unitid>1 F 11</unitid>
+                                <unittitle>Ancône</unittitle>
+                                <unitdate calendar="gregorian" era="ce" normal="1801-05-29 / 1803-07-05">9 prairial an IX-16 messidor an XI</unitdate>
+                            </did>
+                        </c>
+                    </c>
+                    <c level="file">
+                        <did>
+                            <unitid>1 F 12-14</unitid>
+                            <unittitle>Lettres reçues du ministre des Relations extérieures de la République cisalpine.</unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1801-09-23 / 1803-12-31">an X-1803</unitdate>
+                        </did>
+                        <c level="file">
+                            <did>
+                                <unitid>1 F 12</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1801-10-26 / 1802-02-24">4 brumaire-5 ventôse an X</unitdate>
+                            </did>
+                        </c>
+                        <c level="file">
+                            <did>
+                                <unitid>1 F 13</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1802-02-09 / 1802-12-29">9 février-29 décembre 1802</unitdate>
+                            </did>
+                        </c>
+                        <c level="file">
+                            <did>
+                                <unitid>1 F 14</unitid>
+                                <unitdate calendar="gregorian" era="ce" normal="1803-01-03 / 1803-07-20">3 janvier-20 juillet 1803</unitdate>
+                            </did>
+                        </c>
+                    </c>
+                    <c level="file">
+                        <did>
+                            <unitid>1 F 15</unitid>
+                            <unittitle>Lettres et pièces reçues. </unittitle>
+                            <unitdate calendar="gregorian" era="ce" normal="1801-09-23 / 1803-09-23">An X-An XI</unitdate>
+                        </did>
+                        <scopecontent>
+                            <p>Lettres du tribun Honoré Duveyrier relatives à des biens nationaux ; lettres de Besson, employé au ministère de la Justice, pièces concernant ses démêlés avec le sieur Bensi, directeur de la poste d’Étrurie à Rome ; copie d’une lettre d’Alquier (19 prairial an X) ; extrait d’une lettre de Ruffin, chargé d’affaires près la Porte ottomane (24 fructidor an X) ; marché avec le sculpteur Maximilien pour l’exécution d’une statue du premier consul moyennant la somme de 36 000 francs (1er vendémiaire an XI).</p>
+                        </scopecontent>
+                        <controlaccess>
+                            <persname source="BnF" authfilenumber="FRBNF12341348">Duveyrier, Honoré (1753-1839)
+                                <extptr linktype="simple" href="http://ark.bnf.fr/ark:/12148/cb12341348v"/>
+                            </persname>
+                            <persname source="BnF" authfilenumber="FRBNF12568041">Alquier, Charles-Jean-Marie (1752-1826)
+                                <extptr linktype="simple" href="http://ark.bnf.fr/ark:/12148/cb125680412"/>
+                            </persname>
+                        </controlaccess>
+                    </c>
+                </c>
+            </c>
+        </dsc>        
+    </archdesc>
+</ead>
