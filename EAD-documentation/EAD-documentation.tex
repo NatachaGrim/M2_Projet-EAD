@@ -1,0 +1,304 @@
+\documentclass[hidelinks, 13pt]{report}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[french]{babel}
+
+\usepackage{csquotes}
+\usepackage[style=verbose-ibid,backend=bibtex]{biblatex}
+
+\usepackage{titlesec}
+\titleformat{\chapter}{}{}{0em}{\bf\LARGE}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{lscape}
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{soul}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+
+\newcommand{\code}[1]{\colorbox{LightGray}{\texttt{#1}}}
+
+\definecolor{LightGray}{rgb}{0.97,0.97,0.97}
+\definecolor{red}{RGB}{255,0,0}
+\definecolor{brown}{RGB}{139,69,19}
+\definecolor{green}{RGB}{0,128,0}
+\definecolor{blue}{RGB}{0,0,255}
+
+\lstdefinelanguage{EAD}{
+	basicstyle=\small\ttfamily,
+	backgroundcolor=\color{LightGray},
+	%	
+	tabsize=1,
+	showstringspaces=false,
+	columns=fullflexible,
+	breaklines=true,
+	breakatwhitespace=true,
+	%
+	aboveskip=1em,
+	belowskip=1em,
+	xleftmargin=.5em,
+	xrightmargin=.5em,
+	framexleftmargin=.5em,
+	framextopmargin=.5em,
+	framexbottommargin=.5em,
+	framexrightmargin=.5em,
+	%
+	morekeywords=[1]{subtitle,editionstmt,edition,profiledesc,creation,date,langusage,descrules,language,p,arrangement,controlaccess,genreform,geogname},
+	keywordstyle=[1]\color{MidnightBlue},
+	%
+	morekeywords=[2]{langcode},
+	keywordstyle=[2]\color{BurntOrange},
+	%
+	morestring=[b][\color{brown}]",
+	otherkeywords={<,>,/},
+}
+
+\usepackage{hyperref}
+
+\title{Documentation EAD}
+\date{Mars 2024}
+\author{M. Accardo, J. Fan, N. Grim, C. Grometto, L. T. T. Nguyen}
+
+\begin{document}
+	
+	\setstretch{1.5}
+	\maketitle
+	
+	\tableofcontents
+	
+	\chapter{Propos liminaire}
+	
+	Le présent document a pour ambition de fournir une documentation détaillée à propos des instruments de recherche que notre service a dernièrement encodés. Nous y décrivons le choix des éléments majeurs selon un ordre qui suit l'arborescence des fichiers XML-EAD également mis à disposition. Une seconde partie est consacrée à l'explicitation de notre projet d'encodage, en parallèle à l'adoption de nouvelles pratiques descriptives.
+	
+	\chapter{Choix des balises}
+	
+	\section{Encoder l'\code{<eadheader>}}
+	
+	Il est obligatoire de renseigner l'élément \code{eadid}.
+	
+	\subsection{Le \code{<filedesc>}}
+	
+	\subsubsection{Le \code{<titlestmt>}}
+	
+	L'élément \code{<titlestmt>} est obligatoire. En son sein, il convient de renseigner le \code{<titleproper>}. Nous renseignerons les cotes extrêmes dans l'élément \code{<subtitle>}, lequel accueillera une prose plus ou moins verbeuse :
+	
+\begin{lstlisting}[language=EAD]
+<subtitle>Répertoire numérique de la partie de sous-fond séries 1232 W 1-69</subtitle>
+\end{lstlisting}	
+
+	L'auteur du document est à renseigner dans la balise \code{<author>}.
+
+	\subsubsection{L'\code{<editionstmt>}}
+
+	Cet élément contient des informations concernant l'édition électronique en cours de rédaction. Il convient d'uniformiser son contenu :
+	
+\begin{lstlisting}[language=EAD]
+<editionstmt>
+      <edition>première édition électronique</edition>
+</editionstmt>
+\end{lstlisting}
+
+	\subsubsection{Le \code{<publicationstmt>}}
+
+	Il convient d'indiquer de renseigner le service d'archive responsable dans l'élément \code{<publisher>}, les informations sur la localisation dans l'élément \code{<addressline>}, lui-même enfant de l'élément \code{<address>}.
+	
+	Pour éviter toute ambiguïté, nous conserverons uniquement la date de la première édition de l'instrument de recherche dans l'élément \code{<date>}. Les informations relatives aux révisions de l'instrument se trouveront dans l'élément \code{<revisiondesc>}. Celles à propos du présent rétroencodage en XML-EAD seront renseignées dans l'élément \code{<editionstmt>}.
+	
+	\subsection{Le \code{<profiledesc>}}
+	
+	Il conviendra d’uniformiser le \code{<profiledesc>} de la manière suivante :
+
+\begin{lstlisting}[language=EAD]
+<profiledesc>
+      <creation>
+            Cet instrument de recherche a été produit au moyen du logiciel oXygen le <date>05 mars 2024.</date>
+      </creation>
+      <langusage>
+            Instrument de recherche rédigé en <language langcode="fre">français</language>
+      </langusage>
+      <descrules>
+            Encodage en XML-EAD (version 2002). Conforme à la norme ISAD-G.
+      </descrules>
+</profiledesc>
+\end{lstlisting}
+
+	\subsection{Le \code{<revisiondesc>}}
+	
+	Les mentions de révision de l'instrument de recherche peuvent être encodées dans l'élément \code{<revisiondesc>}. Il faudra utiliser l'élément \code{<change>} pour renseigner une unique information sur un changement substantiel apporté à l'instrument de recherche encodé. Chaque élément \code{<change>} contiendra un élément \code{<date>} et un élément \code{<item>}, lesquels indiquent respectivement la date et la nature des changements.
+	
+	\section{Encoder le \code{<frontmatter>}}
+	
+	Il est possible de produire, à la suite du \code{<eadheader>}, un \code{<frontmatter>}. Il est réservé aux informations complémentaires sur les métadonnées, sans lien étroit avec la description des documents. Nous pourrons par exemple y encoder un tableau de concordance entre anciennes et nouvelles cotes.
+	
+	\section{Encoder l'\code{<archdesc>}}
+	
+	\subsection{Le \code{<did>}}
+	
+	Il faudra obligatoirement renseigner les éléments majeurs du \code{<did>}, conformément aux recommandations du standard, soit (dans cet ordre) :
+	
+	\code{<unitid>}
+	
+	\code{<unittitle>}
+	
+	\code{<unitdate>}
+	
+	\code{<origination>}
+	
+	\textit{Nota Bene} : si une ancienne cotation est indiquée, l'\code{<unitid>} contiendra les cotes extrêmes selon ces deux systèmes (ancien et actuel).
+	
+	L'élément \code{<unitdate>} devra obligatoirement posséder les trois attributs \code{@calendar}, \code{@era}, \code{@normal} afin de désambiguïser la notation des dates. La normalisation de ces dernières est fondamentale pour correctement paramétrer notre moteur de recherche, lequel se basera sur les informations saisies en valeur d'attributs -- non pas sur le contenu des éléments.
+	
+	Le \code{<did>} pourra contenir l'élément facultatif \code{physdesc} ainsi que son enfant \code{<extent>}, afin d'indiquer le nombre d'articles et le métrage linéaire. Également, nous pourrons recourir à l'élément \code{<repository>}, s'il est possible de préciser le lieu ou l'organisation en charge de la conservation.
+	
+	\subsection{Le \code{<scopecontent>} et l'\code{<arrangement>}}
+	
+	Il est vivement conseillé de renseigner deux éléments selon l'ordre décrit. Tout d'abord, \code{<scopecontent>} -- lequel contiendra une partie en prose pour présenter le contenu de l'instrument, au sein de paragraphes \code{<p>}. Nous avons préféré cet élément à \code{<abstract>} par souci de ne pas multiplier les éléments et de simplifier la prise en main des diverses règles.
+	
+	Dans un deuxième paragraphe, l'élément \code{<scopecontent>} contiendra également une liste, notée \code{<list>}, composée d'\code{<item>} afin de rendre compte du sommaire de l'instrument de recherche. 
+	
+	Derechef, dans l'optique de simplifier l'encodage, nous limitons la description des parties au premier niveau d'arborescence.
+	
+	À la suite de l'élément \code{<scopecontent>} pourra se trouver l'élément \code{<arrangement>} -- lequel décrira en une phrase les modalités de classement :
+	
+\begin{lstlisting}[language=EAD]
+<arrangement>
+      <p>Classement par commune</p>
+</arrangement>
+\end{lstlisting}
+
+	\subsection{Éléments facultatifs}
+	
+	Si les informations sont fournies, nous recommandons de les encoder au sein d'éléments selon l'ordre suivant :
+	
+	\code{<bioghist>} (présentation du producteur, en prose, si le niveau de description l'exige, il est possible d'ajouter des titres au sein de \code{<head>}),
+	
+	\code{<custodhist>} (historique de conservation, en prose, si le niveau de description l'exige, il est possible d'ajouter des titres au sein de \code{<head>}),
+	
+	\code{<aqinfo>} (modalité et/ou date de versement ainsi que les modalités de consultation si celles-ci ne sont pas soumises à restriction),
+	
+	\code{<accessrestrict>} (description des restrictions d'accès des documents et/ou des modalités de consultation),
+	
+	\code{<userestrict>} (description des restrictions d'utilisation et/ou de reproduction des documents),
+
+	\code{<relatedmaterial>} (liste des sources externes liées aux documents décrits, au sein d'\code{<item>} d'une \code{<list>} contenue dans un \code{<p>}),
+	
+	\code{<separatedmaterial} (liste des sources internes au service, ayant un lien avec l'instrument, au sein d'\code{<item>} d'une \code{<list>} contenue dans un \code{<p>}),
+	
+	\code{<bibliography>} (informations bibliographiques à propos du producteur ou de l'entité ayant produit les documents décrits par l'instrument. Cette bibliographie sera structurée dans des \code{<item>} de \code{<list>}. Le nom de l'auteur sera encodé dans un élément \code{<name>} et le titre de la référence bibliographique sera encodé au sein de l'élément \code{<emph>}).
+	
+	\subsection{Sur le \code{<controlaccess>}}
+	
+	L'EAD a pour avantage certain l'indexation des éléments en vue de faciliter la recherche dans le service d'archive et de créer des liens entre plusieurs instruments de recherche. Aussi, pour rendre compte d'entrées d'indexation, nous utiliserons l'élément \code{<controlaccess>}, au sein duquel nous expliciterons la nature des diverses composantes de l'index :
+	
+\begin{lstlisting}[language=EAD]
+<controlaccess>
+      <genreform>Photographies aériennes</genreform>
+      <geogname>Morbihan (Bretagne, France)</geogname>
+</controlaccess>
+\end{lstlisting}
+	
+	Les éléments majeurs d'indexation utilisables en tant qu'enfants de l'élément \code{<controlaccess>} sont :
+
+	\code{<corpname>} (collectivité),
+	
+	\code{<famname>} (nom de famille),
+	
+	\code{<function>} (activité),
+	
+	\code{<genreform} (genre et caractéristiques physiques),
+	
+	\code{<geogname>} (entité géographique),
+	
+	\code{<name>} (nom),
+	
+	\code{<occupation>} (fonction),
+	
+	\code{<persname>} (nom de personne physique),
+	
+	\code{<subject>} (mot-matière),
+	
+	\code{<title>} (titre).
+	
+	Le choix du bon élément lors de l'encodage des entrées d'index demande un effort d'uniformisation au fil de la description. Aussi, notre travail d'encodage a soulevé la nécessité de prendre une décision à propos de deux cas :
+	
+	\begin{itemize}
+		\item Une communauté de communes ou de villes doit être encodée avec l'élément \code{<corpname>},
+		\item Une paroisse doit également être encodée avec l'élément \code{<corpname>}.
+	\end{itemize}
+	
+	L'utilisation de \code{<controlaccess>} présente plusieurs avantages. Son environnement d'encodage permet d'envisager un enrichissement des données grâce à l'emploi d'attributs dans les balises ouvrantes de ses éléments enfants, à l'instar de liens vers des sites extérieurs, des notices, d'autres instruments de recherche, etc. Nous pourrions alors songer à encoder le plus haut niveau d'indexation et faire en sorte que les niveaux inférieurs héritent des accès contrôlés, pour éviter une répétition de l'information.
+	
+	Par ailleurs, nous recommandons une atomisation maximale des informations à indexer, et de ne renseigner qu'une entrée par élément.	Cette possibilité nécessite cependant un travail de documentation et/ou de production de notices de producteurs et de fonctions en amont -- ce que nous avons été en incapacité de réaliser dans le cadre de notre travail préliminaire.
+	
+	
+	
+	
+	
+	%
+	
+	
+	
+	
+	
+	\chapter{Objectifs de la mise en ligne}
+	
+	Notre démarche d’encodage vise à favoriser l’accessibilité, la découverte et l’exploitation des instruments mis à disposition. Que l’utilisateur soit un chercheur accoutumé aux modes de description archivistique ou non, l’encodage des index et des tables de concordance nous semble nécessaire à la bonne navigation au sein des instruments. Aussi, dans l’optique de situer les archives dans leur contexte - car un fonds se comprend au travers de son histoire - nous fournissons l’intégralité des informations dont nous disposons dans les éléments \code{<custodhist>} et \code{<bioghist>}. 
+	
+	Grâce à ces derniers, nous sommes en mesure d’atomiser les données selon deux catégories. \code{<custodhist>} nous permet de renseigner des informations sur la garde des documents à l’instar des transferts de propriété, des achats, des dépôts, etc. avant leur entrée dans notre service. \code{<bioghist>} nous permet quant à lui de transcrire les informations biographiques d’individus ainsi que l’histoire d’entités mentionnées dans l’instrument - exemplairement des services archives, des communes ou des communautés de communes.
+	
+	L’explicitation des règles de la description archivistique est tout à fait nécessaire pour privilégier l’interopérabilité et l’inter-connectivité des données. Une compatibilité efficiente requiert l’utilisation d’un vocabulaire partagé, l’usage d’index et de référentiels ainsi que le respect de modèles de description. L’enjeu majeur est alors de mettre à disposition des outils répondant aux mêmes règles et permettant l’interopérabilité des données.
+	
+	
+	
+	
+	
+	%
+	
+	
+	
+	
+	
+	\chapter{Adoption de nouvelles pratiques}
+	
+	Réfléchir à l'adoption de nouvelles pratiques descriptive requiert d'examiner les méthodes existantes dans l'optique d'identifier nos besoins et de cerner les axes d'amélioration. Cela permettra une meilleure définition des domaines dans lesquels nos pratiques pourront être optimisées afin de répondre aux exigences de la gestion de documents.
+	
+	Sur la base de cette évaluation, nous enrichirons la présente documentation, dans le respect des spécificités de chaque fonds d'archives. Cette étape comprend également l'apprentissage et l'application de nouvelles méthodes \textit{via} la mise à disposition de matériel pédagogique et d'outils pratiques -- dont un dictionnaire de balises, un guide d'encodage et des séries d'exemples conformes aux pratiques descriptives du service.
+	
+	Il nous semble également fondamental d'organiser des journées de formation pour que l'ensemble de l'équipe monte en compétence et en connaissances. Nous tâcherons d'insister sur la nécessité d'emploi de chaque élément pour favoriser l'harmonisation et l'interopérabilité. Nous proposerons, dans le cadre de ces journées, de fournir un modèle, un \textit{template} dûment commenté afin d'au mieux décrire les éléments et la nature du contenu attendu.
+	
+	Ainsi, à l'issue de la formation, l'équipe en charge de la description archivistique saura mettre en œuvre les nouvelles pratiques dans leur travail quotidien. Nous ajusterons notre documentation et nos recommandations en fonctions des retours et des observations de nos collègues.
+	
+	
+	
+	
+	
+	%
+	
+	
+	
+
+
+	\chapter{Insuffisances observées}
+	
+	Il a été complexe de systématiquement trouver des éléments adaptés pour encoder les informations les plus particulières -- pourtant susceptibles de figurer dans un instrument de recherche en archives.
+			
+	\section{Les tables de concordance}
+	
+	Un premier exemple frappant concerne les tables de concordance : peut-on les considérer comme des sommaires ou non ? Existe-t-il un élément particulier pour les encoder ? Nos recherches ayant d'abord été infructueuses, nos consultations répétées du dictionnaire des balises ont mis en lumière la solution suivante : produire un \code{<frontmatter>} à la suite de l'\code{<eadheader>}. Cet élément accueillera des informations complémentaires sur les métadonnées, sans rapport étroit avec la description des documents.
+	
+	\section{Les index}
+	
+	L'encodage des index a également posé problème. Nous avions identifié deux possibilités : utiliser l'élément \code{<index>} ou l'élément \code{<controlaccess>}. L'emploi de ce dernier nous a paru plus judicieux dans la mesure où il figurait dans d'autres instruments de recherche où des index étaient encodés, avec un choix d'éléments enfants plus conséquent. Néanmoins, ces éléments enfants mis à disposition n'ont pas toujours été d'une éloquence remarquable pour l'encodage de certains termes (à l'instar d'\enquote{urbanisme} ou de \enquote{céréales}).
+	
+	\section{Le sommaire}
+
+	La question du positionnement du sommaire a été posée à plus d'une reprise. Comme nous n'avons pas trouvé d'élément saillant dédié à cette partie des documents, nous avons fait le choix de l'encoder au sein de l'élément \code{<scopecontent>}. Ce choix témoigne de la difficulté d'atomisation de l'information entre les différents éléments : un élément capable d’englober de nombreux éléments enfants rend le choix d’encodage plus complexe.
+	
+	\section{Les attributs}
+	
+	Enfin, la faible présence d'attributs au sein de nos travaux traduit un manque de finesse dans la granularité de la description. Au regard des éléments que nous utilisons, une meilleure connaissance des derniers, de leurs attributs et de leur valeur sera bienvenue afin d'au mieux hiérarchiser les informations présentes au sein d'instruments de recherche.
+\end{document}
