@@ -90,7 +90,7 @@
 <subtitle>Répertoire numérique de la partie de sous-fond séries 1232 W 1-69</subtitle>
 \end{lstlisting}	
 
-	L'auteur du document est à renseigner dans la balise \code{<author>}.
+	L'auteur de l'instrument de recherche est à renseigner dans la balise \code{<author>}.
 
 	\subsubsection{L'\code{<editionstmt>}}
 
@@ -104,7 +104,7 @@
 
 	\subsubsection{Le \code{<publicationstmt>}}
 
-	Il convient d'indiquer de renseigner le service d'archive responsable dans l'élément \code{<publisher>}, les informations sur la localisation dans l'élément \code{<addressline>}, lui-même enfant de l'élément \code{<address>}.
+	Il convient de renseigner le nom du service d'archive responsable dans l'élément \code{<publisher>}, et les informations sur la localisation dans l'élément \code{<addressline>}, lui-même enfant de l'élément \code{<address>}.
 	
 	Pour éviter toute ambiguïté, nous conserverons uniquement la date de la première édition de l'instrument de recherche dans l'élément \code{<date>}. Les informations relatives aux révisions de l'instrument se trouveront dans l'élément \code{<revisiondesc>}. Celles à propos du présent rétroencodage en XML-EAD seront renseignées dans l'élément \code{<editionstmt>}.
 	
@@ -156,11 +156,11 @@
 	
 	\subsection{Le \code{<scopecontent>} et l'\code{<arrangement>}}
 	
-	Il est vivement conseillé de renseigner deux éléments selon l'ordre décrit. Tout d'abord, \code{<scopecontent>} -- lequel contiendra une partie en prose pour présenter le contenu de l'instrument, au sein de paragraphes \code{<p>}. Nous avons préféré cet élément à \code{<abstract>} par souci de ne pas multiplier les éléments et de simplifier la prise en main des diverses règles.
+	Il est vivement conseillé de renseigner ces deux éléments selon l'ordre décrit. Tout d'abord, \code{<scopecontent>} -- lequel contiendra une partie en prose pour présenter le contenu de l'instrument, au sein de paragraphes \code{<p>}. Nous avons préféré cet élément à \code{<abstract>} afin de ne pas multiplier les éléments et de simplifier la prise en main des diverses règles.
 	
 	Dans un deuxième paragraphe, l'élément \code{<scopecontent>} contiendra également une liste, notée \code{<list>}, composée d'\code{<item>} afin de rendre compte du sommaire de l'instrument de recherche. 
 	
-	Derechef, dans l'optique de simplifier l'encodage, nous limitons la description des parties au premier niveau d'arborescence.
+	Toujours dans l'optique de simplifier l'encodage, nous limitons la description des parties au premier niveau d'arborescence.
 	
 	À la suite de l'élément \code{<scopecontent>} pourra se trouver l'élément \code{<arrangement>} -- lequel décrira en une phrase les modalités de classement :
 	
@@ -172,7 +172,7 @@
 
 	\subsection{Éléments facultatifs}
 	
-	Si les informations sont fournies, nous recommandons de les encoder au sein d'éléments selon l'ordre suivant :
+	Si les informations supplémentaires sont fournies, nous recommandons de les encoder au sein des éléments suivant, selon l'ordre et la nomneclature suivants :
 	
 	\code{<bioghist>} (présentation du producteur, en prose, si le niveau de description l'exige, il est possible d'ajouter des titres au sein de \code{<head>}),
 	
@@ -186,13 +186,13 @@
 
 	\code{<relatedmaterial>} (liste des sources externes liées aux documents décrits, au sein d'\code{<item>} d'une \code{<list>} contenue dans un \code{<p>}),
 	
-	\code{<separatedmaterial} (liste des sources internes au service, ayant un lien avec l'instrument, au sein d'\code{<item>} d'une \code{<list>} contenue dans un \code{<p>}),
+	\code{<separatedmaterial>} (liste des sources internes au service, ayant un lien avec l'instrument, au sein d'\code{<item>} d'une \code{<list>} contenue dans un \code{<p>}),
 	
 	\code{<bibliography>} (informations bibliographiques à propos du producteur ou de l'entité ayant produit les documents décrits par l'instrument. Cette bibliographie sera structurée dans des \code{<item>} de \code{<list>}. Le nom de l'auteur sera encodé dans un élément \code{<name>} et le titre de la référence bibliographique sera encodé au sein de l'élément \code{<emph>}).
 	
 	\subsection{Sur le \code{<controlaccess>}}
 	
-	L'EAD a pour avantage certain l'indexation des éléments en vue de faciliter la recherche dans le service d'archive et de créer des liens entre plusieurs instruments de recherche. Aussi, pour rendre compte d'entrées d'indexation, nous utiliserons l'élément \code{<controlaccess>}, au sein duquel nous expliciterons la nature des diverses composantes de l'index :
+	L'EAD permet l'indexation des éléments en vue de faciliter la recherche dans le service d'archive et de créer des liens entre plusieurs instruments de recherche. Aussi, pour rendre compte d'entrées d'indexation, nous utiliserons l'élément \code{<controlaccess>}, au sein duquel nous expliciterons la nature des diverses composantes de l'index :
 	
 \begin{lstlisting}[language=EAD]
 <controlaccess>
@@ -230,7 +230,7 @@
 		\item Une paroisse doit également être encodée avec l'élément \code{<corpname>}.
 	\end{itemize}
 	
-	L'utilisation de \code{<controlaccess>} présente plusieurs avantages. Son environnement d'encodage permet d'envisager un enrichissement des données grâce à l'emploi d'attributs dans les balises ouvrantes de ses éléments enfants, à l'instar de liens vers des sites extérieurs, des notices, d'autres instruments de recherche, etc. Nous pourrions alors songer à encoder le plus haut niveau d'indexation et faire en sorte que les niveaux inférieurs héritent des accès contrôlés, pour éviter une répétition de l'information.
+	L'utilisation de \code{<controlaccess>} présente plusieurs avantages. Cette configuration permet d'envisager un enrichissement des données grâce à l'emploi d'attributs dans les balises ouvrantes de ses éléments enfants, à l'instar de liens vers des sites extérieurs, des notices, d'autres instruments de recherche, etc. Le seond avantage tient au principe d'héritage : on indexe au niveau le plus haut et les niveaux inférieurs héritent des entrées d'index, cela évite de répéter l’information. 
 	
 	Par ailleurs, nous recommandons une atomisation maximale des informations à indexer, et de ne renseigner qu'une entrée par élément.	Cette possibilité nécessite cependant un travail de documentation et/ou de production de notices de producteurs et de fonctions en amont -- ce que nous avons été en incapacité de réaliser dans le cadre de notre travail préliminaire.
 	
