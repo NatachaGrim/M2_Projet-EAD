@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.2)  14 MAR 2024 17:20
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.2)  16 MAR 2024 16:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -885,9 +885,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 85.
 
-Overfull \hbox (36.11002pt too wide) in paragraph at lines 107--108
-\TU/lmr/m/n/10 ment [][][][][][], les informations sur la localisation dans l’é
-lément [][][][][][],
+Overfull \hbox (9.96004pt too wide) in paragraph at lines 93--94
+[]\TU/lmr/m/n/10 L’auteur de l’instrument de recherche est à renseigner dans la
+ balise [][][][][][]. 
+ []
+
+
+Overfull \hbox (46.66002pt too wide) in paragraph at lines 107--108
+\TU/lmr/m/n/10 ment [][][][][][], et les informations sur la localisation dans 
+l’élément [][][][][][],
  []
 
 [3
@@ -940,7 +946,13 @@ ts et/ou
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\colorbox' on input line 193.
 
-[7] [8]
+[7]
+Overfull \hbox (0.21002pt too wide) in paragraph at lines 233--234
+[]\TU/lmr/m/n/10 L’utilisation de [][][][][][] présente plusieurs avantages. Ce
+tte confi-
+ []
+
+[8]
 Chapitre 3.
 [9
 
